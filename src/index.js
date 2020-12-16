@@ -20,7 +20,7 @@ class App extends React.Component {
       return <div>errorMessage:{this.state.errorMessage}</div>;
     }
 
-    return <Spinner />;
+    return <Spinner message="Please accept network request" />;
   }
 }
 
