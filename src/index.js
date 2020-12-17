@@ -12,15 +12,19 @@ class App extends React.Component {
       (err) => this.setState({ errorMessage: err.message })
     );
   }
-  render() {
+
+  renderContent() {
     if (this.state.lat && !this.state.errorMessage) {
       return <SeasonDisplay lat={this.state.lat} />;
     }
     if (!this.state.lat && this.state.errorMessage) {
       return <div>errorMessage:{this.state.errorMessage}</div>;
     }
-
     return <Spinner message="Please accept network request" />;
+  }
+
+  render() {
+    return <div className="border red">{this.renderContent()}</div>;
   }
 }
 
