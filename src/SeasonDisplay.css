@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montez&display=swap");
+
 .icon-left {
   position: absolute;
   top: 10px;
@@ -15,24 +17,33 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  color: aliceblue;
+}
+
+.season-display .text-style {
+  font-family: "Montez", cursive;
+  font-size: 4.1rem;
 }
 
 .season-display.winter i {
-  color: blue;
+  color: rgb(129, 163, 238);
+  transition: ease-in-out;
 }
 
 .season-display.summer i {
-  color: red;
+  color: #6d2944;
 }
 
 .winter {
-  background-color: aquamarine;
+  background-image: url("./assets/cold-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: 0.4 ease-out;
 }
 
 .summer {
-  background-color: orange;
-}
-
-.border.red {
-  border: 10px solid red;
+  background-image: url("./assets/warm-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: 0.4 ease-out;
 }
