@@ -4,7 +4,7 @@ An Application which detects Seasons you’re Currently in and Provide a nice lo
 
 ## API USED
 
-Geolocation API - which detects the geolocation in which you are using your browser based on many paramenters. Read more about Geolocation API on Mozilla Developers CDN
+Geolocation API - which determines where the user is physically located depending upon a couple of different paramenters such as user IP Address, different WI-FI networks that are visible in the area. (NOTE :- Not working in CHINA) Read more about Geolocation API on Mozilla Developers CDN
 
 #### Read More- https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
 
